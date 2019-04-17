@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Desafio</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+</head>
+<body>
+
+ 	<header>
+ 		<div class="conteudo-nav">
+	      <span class="logo">
+	     	<img src="images/logo.jpg" alt="Logo">
+	      </span>
+	      
+	      <input type="checkbox" id="control-nav" />
+	      <label for="control-nav" class="control-nav"></label>
+	      <label for="control-nav" class="control-nav-close"></label>
+
+	      <nav>
+	        <ul class="list-auto">
+	          <li>
+	            <a href="#">Games</a>
+	          </li>
+	          <li>
+	            <a href="#">Presentes</a>
+	          </li>
+	          <li>
+	            <a href="#">Sale</a>
+	          </li>
+	          <li>
+	          	<input id="produtos" class="txtbuscar" type="search" name="Buscar" placeholder="Digite o que procura">
+	          </li>
+	          <li>
+
+	          	<img class="carrinho" src="images/carrinho.png" alt="Carrinho" width="32">
+	          	<span class="bagde">0</span>
+	          </li>
+	        </ul>
+	      </nav>
+      </div>
+    </header>
+
+    <br><br><br><br>
+
+	<div class="mask" role="dialog"></div>
+	<div class="modal-msg" role="alert">
+		<div class="conteudo-centro">
+			<img src="images/ok.jpg" alt="ok" width="100">
+			<h3>PRODUTO ADICIONADO <br>AO CARRINHO</h3>
+			<button role="button" class="btnPadrao close">OK</button>
+		</div>
+	</div>
+
+
+    <div class="geral">
+    	
+
+    	<div class="breadcrumb-conteudo">
+    		 <ul class="breadcrumb">
+			  <li><a href="#">N1</a></li>
+			  <li><a href="#">action figures</a></li>
+			  <li>Super Mario</li>
+			</ul> 
+    	</div>
+
+    	<div class="produto-conteudo">
+    		<div class="galeria-lista">
+    			<ul>
+    				<li><img src="images/super-mario.jpg" alt="Super Mario"></li>
+    				
+    			</ul>
+    		</div>
+    		<div class="galeria-foto">
+    			<img src="images/super-mario.jpg" alt="Super Mario">
+    		</div>
+
+
+    		<div class="galeria-comprar">
+    			<h2>Action figure bombeiro Mario topzeira das galáxias</h2>
+
+    			<div class="info-comprar">
+    				<p class="comprar-de">de R$ 189,90</p>
+    				<p class="comprar-por">por <span>R$ 149,90</span></p>
+    				<button id="btnComprar" aria-haspopup="true">COMPRA AE</button>
+    			</div>
+
+
+    			<div class="frete">	
+    				<p>Calcular Frete</p>
+    				<form action="" method="post">
+    					<input type="text" name="txtcepinicio" size="13" placeholder="00000" maxlength="5">
+    					<input type="text" name="txtcepfim"  size="8" placeholder="000" maxlength="3">
+    					<button type="submit" class="btnPadrao">Calcular</button>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="clearfix"></div><br><br>
+
+    	<div class="descricao-produto">
+    		<h2>Descrição do Produto</h2>
+
+			<p>
+				orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+				<br><br>
+				Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+    		
+    	</div>
+    	<div class="quem-viutambem">
+    		<h2>Quem viu, viu tamém</h2>
+    		<div class="itens-produtos">
+    			<div class="item">
+    				<div class="item-image">
+    					<img src="images/produto1.jpg" alt="Produto 1">
+    				</div>
+    				<div class="item-info">
+    					<h3 class="item-titulo">Action Figure Doctor Strage e Burning Flame Set - S.H.Figuart</h3>
+    					<p class="item-de">de R$ 725.90</p>
+    					<p class="item-por">por R$ 624,90</p>
+    				</div>
+    				
+    			</div>
+
+    			<div class="item">
+    				<div class="item-image">
+    					<img src="images/produto2.jpg" alt="Produto 2">
+    				</div>
+    				<div class="item-info">
+    					<h3 class="item-titulo">Action Figure - Super Mario Bros </h3>
+    					<p class="item-de">de R$ 189.90</p>
+    					<p class="item-por">por R$ 149,90</p>
+    				</div>
+    			</div>
+
+    			<div class="item">
+    				<div class="item-image">
+    					<img src="images/produto3.jpg" alt="Produto 3">
+    				</div>
+    				<div class="item-info">
+    					<h3 class="item-titulo">Figure Street Fighter Ryu</h3>
+    					<p class="item-de">de R$ 5.500,20</p>
+    					<p class="item-por">por R$ 5.259,00</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+ 	<footer>
+ 		<div class="conteudo-footer">
+ 			<div class="logo-footer">
+ 				<img src="images/logofooter.jpg" alt="Logo Footer">
+ 			</div>
+ 			<div class="copyright">
+ 				<p>Agência N1 - Todos os direitos reservados.</p>
+ 			</div>
+ 		</div>
+ 	</footer>
+
+ 	<script src="js/jquery.min.js" type="text/javascript"></script>
+
+ 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+	<script src="js/script.js" type="text/javascript"></script>
+
+</body>
+</html>
